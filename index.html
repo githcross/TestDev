@@ -3,87 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav>
+      <div class="container">
+        <h1>Hi, I'm <span>Herbert Mauricio Cruz</span></h1>
+        <p>
+          I'm a <strong>Full-Stack Developer</strong> passionate about building
+          modern web applications.
+        </p>
+        <a href="#contact" class="btn primary-btn">Get in Touch</a>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <div class="container">
         <ul>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">About Me</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-      <div class="hero">
-        <h1>Hello, I'm Herbert Mauricio Cruz</h1>
+      </div>
+    </nav>
+
+    <section id="about" class="about section">
+      <div class="container">
+        <h2>About Me</h2>
         <p>
-          A passionate <span class="highlight">Developer</span> crafting digital
-          solutions
+          As a developer with expertise in web technologies, I enjoy creating
+          elegant and efficient solutions for real-world problems. My passion
+          for coding drives me to constantly learn and implement the latest in
+          technology.
         </p>
-        <a href="#contact" class="cta-btn">Let's Connect</a>
       </div>
-    </header>
-
-    <section id="about" class="about">
-      <h2>About Me</h2>
-      <p>
-        I'm a developer with a passion for technology and innovation. With
-        expertise in web development, I create seamless digital experiences. I
-        love solving problems and building efficient, scalable applications.
-      </p>
     </section>
 
-    <section id="skills" class="skills">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill">
-          <h3>HTML & CSS</h3>
-          <p>Building clean, modern layouts.</p>
-        </div>
-        <div class="skill">
-          <h3>JavaScript</h3>
-          <p>Interactive and dynamic web experiences.</p>
-        </div>
-        <div class="skill">
-          <h3>PHP</h3>
-          <p>Backend logic and APIs.</p>
-        </div>
-        <div class="skill">
-          <h3>Flutter</h3>
-          <p>Cross-platform mobile apps.</p>
+    <section id="skills" class="skills section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, React</p>
+          </div>
+          <div class="skill-card">
+            <h3>Backend</h3>
+            <p>PHP, Node.js, Laravel, MySQL</p>
+          </div>
+          <div class="skill-card">
+            <h3>Mobile</h3>
+            <p>Flutter, React Native</p>
+          </div>
+          <div class="skill-card">
+            <h3>DevOps</h3>
+            <p>Docker, CI/CD, Heroku, AWS</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="projects">
-      <h2>Recent Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Project 1</h3>
-          <p>A web application for managing personal projects.</p>
-        </div>
-        <div class="project-card">
-          <h3>Project 2</h3>
-          <p>An e-commerce site with payment gateway integration.</p>
+    <section id="projects" class="projects section">
+      <div class="container">
+        <h2>Recent Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="project1.jpg" alt="Project 1" />
+            <h3>Project 1</h3>
+            <p>
+              A full-featured e-commerce platform with integrated payment
+              gateways and a modern user experience.
+            </p>
+          </div>
+          <div class="project-card">
+            <img src="project2.jpg" alt="Project 2" />
+            <h3>Project 2</h3>
+            <p>
+              A mobile app for task management with push notifications, built
+              using Flutter.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2>Contact Me</h2>
-      <p>Interested in working together? Feel free to reach out!</p>
-      <a href="mailto:example@example.com" class="cta-btn">Send Email</a>
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>
+          If you're looking to collaborate or have a project in mind, feel free
+          to reach out to me.
+        </p>
+        <a href="mailto:example@example.com" class="btn primary-btn"
+          >Email Me</a
+        >
+      </div>
     </section>
 
-    <footer>
-      <p>&copy; 2024 Herbert Mauricio Cruz. All rights reserved.</p>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Herbert Mauricio Cruz. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
