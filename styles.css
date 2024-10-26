@@ -166,12 +166,12 @@ a {
 }
 
 .social-links a {
-    display: inline-block;
+    display: flex;
+    justify-content: center; /* Centra el ícono horizontalmente */
+    align-items: center;     /* Centra el ícono verticalmente */
     margin: 0 10px;
-    text-align: center;
-    width: 50px;   /* Ajusta el tamaño del ícono */
-    height: 50px;  /* Asegúrate de que la altura sea igual a la anchura */
-    line-height: 50px;
+    width: 50px;   /* Tamaño cuadrado para que sea circular */
+    height: 50px;  /* Tamaño cuadrado para que sea circular */
     border-radius: 50%;  /* Hace que el ícono sea completamente circular */
     background-color: #f0f0f0;  /* Color de fondo para el ícono */
     color: #333;  /* Color del ícono */
@@ -191,7 +191,6 @@ a {
 .social-links a.linkedin:hover {
     background-color: #0077B5;  /* Color de fondo específico para LinkedIn */
 }
- 
 
 /* Estilos responsive para mejor adaptación en móviles */
 @media (max-width: 768px) {
