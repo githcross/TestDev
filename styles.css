@@ -161,14 +161,17 @@ a {
 }
 
 .social-links a {
-  color: #fff;
-  background-color: #333;
-  border-radius: 50%;
-  margin: 0 10px;
-  padding: 10px;
-  display: inline-block;
-  font-size: 20px;
-  transition: background-color 0.3s ease;
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+    width: 50px;   /* Ajusta el tamaño del ícono */
+    height: 50px;  /* Asegúrate de que la altura sea igual a la anchura */
+    line-height: 50px;
+    border-radius: 50%;  /* Hace que el ícono sea completamente circular */
+    background-color: #f0f0f0;  /* Color de fondo para el ícono */
+    color: #333;  /* Color del ícono */
+    font-size: 24px;  /* Tamaño del ícono */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .social-links a:hover {
@@ -182,6 +185,7 @@ a {
 .social-links a.linkedin:hover {
   background-color: #0a66c2; /* Color de LinkedIn */
 }
+ 
 
 /* Estilos responsive para mejor adaptación en móviles */
 @media (max-width: 768px) {
