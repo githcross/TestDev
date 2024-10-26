@@ -1,131 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    
-    <!-- Font Awesome for social icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MMZH9ZFL');</script>
-    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M8FZ5TKNR0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-M8FZ5TKNR0');
-</script>
-
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMZH9ZFL"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
+    <!-- Header -->
     <header class="header">
-        <div class="container">
-            <h1>Hi, I'm <span>Herbert Mauricio Cruz</span></h1>
-            <p>I'm a <strong>Full-Stack Developer</strong> passionate about building modern web applications.</p>
-            <a href="#contact" class="btn primary-btn">Get in Touch</a>
-        </div>
+        <h1>Heberth Cruz <span>Portfolio</span></h1>
+        <p>Desarrollador Full Stack</p>
     </header>
 
+    <!-- Navbar -->
     <nav class="navbar">
-        <div class="container">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
     </nav>
 
-    <section id="about" class="about section">
+    <!-- About Section -->
+    <section class="section about" id="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>
-                As a developer with expertise in web technologies, I enjoy creating elegant and efficient solutions for real-world problems. My passion for coding drives me to constantly learn and implement the latest in technology.
-            </p>
+            <h2>Sobre mí</h2>
+            <p>Soy un desarrollador full stack apasionado por crear soluciones web eficientes y escalables.</p>
         </div>
     </section>
 
-    <section id="skills" class="skills section">
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
         <div class="container">
-            <h2>Skills</h2>
+            <h2>Habilidades</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>Frontend</h3>
-                    <p>HTML, CSS, JavaScript, React</p>
+                    <h3>JavaScript</h3>
                 </div>
                 <div class="skill-card">
-                    <h3>Backend</h3>
-                    <p>PHP, Laravel, MySQL</p>
+                    <h3>PHP</h3>
                 </div>
                 <div class="skill-card">
-                    <h3>Mobile</h3>
-                    <p>Android Studio</p>
+                    <h3>Django</h3>
                 </div>
                 <div class="skill-card">
-                    <h3>DevOps</h3>
-                    <p>Docker, CI/CD, Heroku, AWS</p>
+                    <h3>Laravel</h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects section">
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
         <div class="container">
-            <h2>Recent Projects</h2>
+            <h2>Proyectos</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <a href="project1.html">
-                        <img src="project1.jpg" alt="Project 1" />
-                        <h3>Project 1</h3>
-                        <p>A full-featured e-commerce platform with integrated payment gateways and a modern user experience.</p>
-                    </a>
+                    <img src="project1.jpg" alt="Proyecto 1">
+                    <h3>Proyecto 1</h3>
                 </div>
                 <div class="project-card">
-                    <a href="project2.html">
-                        <img src="project2.jpg" alt="Project 2" />
-                        <h3>Project 2</h3>
-                        <p>A mobile app for task management with push notifications, built using Flutter.</p>
-                    </a>
+                    <img src="project2.jpg" alt="Proyecto 2">
+                    <h3>Proyecto 2</h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact section">
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>If you're looking to collaborate or have a project in mind, feel free to reach out to me.</p>
-            <a href="mailto:devcross91@gmail.com" class="btn primary-btn">Email Me</a>
+            <h2>Contacto</h2>
+            <div class="social-links">
+                <a href="https://github.com/githcross" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/heberth-cruz7" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
     </section>
 
-    <!-- Sección de redes sociales -->
-    <div class="social-links">
-        <a href="https://github.com/githcross" target="_blank" class="github"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/heberth-cruz7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
-    </div>
-
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Herbert Mauricio Cruz. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Heberth Cruz. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>
