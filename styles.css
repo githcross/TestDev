@@ -22,9 +22,6 @@ h3 {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
-  text-decoration: none; /* Eliminar el subrayado */
-  color: inherit; /* Mantener el color original */
-  outline: none;
 }
 
 /* Header */
@@ -153,52 +150,34 @@ h3 {
 }
 
 a {
-  text-decoration: none; /* Eliminar el subrayado */
-  color: inherit; /* Mantener el color original */
-  outline: none; /* Evitar el borde de selección */
+  text-decoration: none;
+  color: inherit;
+  outline: none;
 }
 
-/* Estilos para los íconos de redes sociales */
+/* Social Links */
 .social-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .social-links a {
-    display: flex;
-    justify-content: center; /* Centra el ícono horizontalmente */
-    align-items: center;     /* Centra el ícono verticalmente */
-    margin: 0 10px;
-    width: 50px;   /* Tamaño cuadrado para que sea circular */
-    height: 50px;  /* Tamaño cuadrado para que sea circular */
-    border-radius: 50%;  /* Hace que el ícono sea completamente circular */
-    background-color: #f0f0f0;  /* Color de fondo para el ícono */
-    color: #333;  /* Color del ícono */
-    font-size: 24px;  /* Tamaño del ícono */
-    transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    background-color: #333;
-    color: #fff;  /* Cambia el color al pasar el mouse por encima */
+  color: #f09d51;
 }
 
-.social-links a.github:hover {
-    background-color: #333;  /* Color de fondo específico para GitHub */
-}
-
-.social-links a.linkedin:hover {
-    background-color: #0077B5;  /* Color de fondo específico para LinkedIn */
-}
-
-/* Estilos responsive para mejor adaptación en móviles */
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-    }
+  .navbar ul {
+    flex-direction: column;
+  }
 
-    .navbar ul li {
-        margin: 10px 0;
-    }
+  .navbar ul li {
+    margin: 10px 0;
+  }
 }
